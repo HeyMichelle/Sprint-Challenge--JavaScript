@@ -47,10 +47,21 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
+    What is the calling object?
+    
+    -Window/global object binding: function within window
+    
+    -Implicit binding: binding of 'this' will be to the keyword before the dot, fx(person.name) will !== this.name as this.name would refer to the outer function variable.
+    
+    -New binding: 1. creates an empty object referenced by 'this' in the following variables. 2. properties/methods added to the referenced object. 3. New object is returned at the end (implicitly). New keyword = constructor.
+    
+    -Explicit binding: no function to reference in this object; uses call, apply, and bind; can make copies of functions and refer to person objects.
 
 
 
 5. Why do we need super() in an extended class?
+
+    The extend keyword signifies a class as a subclass/child class. The super keyword can be used as a function (calls on/executes parent class function within the subclass using the paramaters passed into the subclass) or an object (here it would call methods of parent class where it is specifically called upon).
 
 
 
