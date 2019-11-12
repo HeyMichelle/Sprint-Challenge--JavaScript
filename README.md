@@ -30,13 +30,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    Map goes through similar processes as .forEach, however, .map provides an entirely new array (returns) from the original while .forEach mutates the original. Also, .map is functionally better in terms of speed since it returns a new array and leaves behind the original, rather than have to affect the original array (.forEach).
+
+
 2. What is the difference between a function and a method?
+
+    Functions can be called by name and operate with parameters to return a value. A function executes inputted code to return a result. A method similarly can be called upon by name but is associated with objects, and can operate on a smaller scale than a function, being able to be used exactly where it is called on (e.g., within object key values). 
+
 
 3. What is closure?
 
+    Utilizing a closer an inner function can access and/or reference scopes of outer/global scopes. They control the variables/information that is considered to be in the scope.
+
+        Example: data privacy (enclosed variables kept within the scope of the outer  function unless accessed with privilege methods).
+
+
 4. Describe the four rules of the 'this' keyword.
 
+
+
+
 5. Why do we need super() in an extended class?
+
+
+
 
 ## Project Set up
 
