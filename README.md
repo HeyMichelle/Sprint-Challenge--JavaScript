@@ -30,13 +30,41 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    Map goes through similar processes as .forEach, however, .map provides an entirely new array (returns) from the original while .forEach mutates the original. Also, .map is functionally better in terms of speed since it returns a new array and leaves behind the original, rather than have to affect the original array (.forEach).
+
+
 2. What is the difference between a function and a method?
+
+    Functions can be called by name and operate with parameters to return a value. A function executes inputted code to return a result. A method similarly can be called upon by name but is associated with objects, and can operate on a smaller scale than a function, being able to be used exactly where it is called on (e.g., within object key values). 
+
 
 3. What is closure?
 
+    Utilizing a closer an inner function can access and/or reference scopes of outer/global scopes. They control the variables/information that is considered to be in the scope.
+
+        Example: data privacy (enclosed variables kept within the scope of the outer  function unless accessed with privilege methods).
+
+
 4. Describe the four rules of the 'this' keyword.
 
+    What is the calling object?
+    
+    -Window/global object binding: function within window
+    
+    -Implicit binding: binding of 'this' will be to the keyword before the dot, fx(person.name) will !== this.name as this.name would refer to the outer function variable.
+    
+    -New binding: 1. creates an empty object referenced by 'this' in the following variables. 2. properties/methods added to the referenced object. 3. New object is returned at the end (implicitly). New keyword = constructor.
+    
+    -Explicit binding: no function to reference in this object; uses call, apply, and bind; can make copies of functions and refer to person objects.
+
+
+
 5. Why do we need super() in an extended class?
+
+    The extend keyword signifies a class as a subclass/child class. The super keyword can be used as a function (calls on/executes parent class function within the subclass using the paramaters passed into the subclass) or an object (here it would call methods of parent class where it is specifically called upon).
+
+
+
 
 ## Project Set up
 
